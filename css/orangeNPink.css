@@ -1,0 +1,106 @@
+body{
+	background-image: url("../images/siteBgMin.png");
+}
+
+.logoContainer {
+	height: 420px;
+	width: 100%;
+	background-image: url("../images/headerBGMin.png");
+	text-align: center;
+}
+
+.logoContainer img {
+	padding-top: 48px;
+}
+
+.navContainer {
+	
+}
+
+.site-nav {
+	margin: 0 auto;
+	background-color: #79F7FF;
+	width: 100%;
+	text-align: center;
+}
+
+#search-demo-container {
+	position: absolute;
+	display: inline-block;
+	max-width: 400px;
+	right: 25px;
+	top: 5px;
+}
+#search-input {
+	display: inline-block;
+	padding: .5em;
+	width: 100%;
+	font-size: 0.8em;
+}
+
+.home-content {
+	
+	margin: 0 auto;
+	width: 80%;
+}
+
+.mBlogsContainer {
+	text-align: center;
+}
+
+.mBlog {
+	margin: 0 auto;
+	width: 45%;
+	display: inline-block;
+	text-align: left;
+}
+
+.mFashionContainer {
+	text-align: center;
+}
+
+.mFashion {
+	margin: 0 auto;
+	width: 30%;
+	display: inline-block;
+	text-align: left;
+}
+
+.mMiscContainer {
+	text-align: center;
+}
+
+.mMisc {
+	margin: 0 auto;
+	width: 45%;
+	display: inline-block;
+	text-align: left;
+}
+
+.page-link {
+	padding-left: 40px;
+	padding-right: 40px;
+	margin: 0 auto;
+	color: #FFFFFF;
+}
+
+.page-content {
+	margin: 0 auto;
+	width: 70%;
+	background-color: #FFFFFF;
+}
+
+.site-footer {
+	background-color: #79F7FF;
+	width: 100%;
+}
+
+@media (max-width: 1440px) {
+	.page-content {
+		width: 90%;
+	}
+	.home-contet {
+		width: 95%;
+	}
+
+}
