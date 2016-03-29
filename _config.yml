@@ -12,8 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Non-relevant blogs and probably really biased.
   Have a lot of cute stuffs though, atleast imho.
   Read with skeptical eyes. Thank!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/OrangeNPink" # the subpath of your site, e.g. /blog
+url: "http://ordrstudio.com" # the base hostname & protocol for your site
 
 github_username:  ComposerCookie
 gitlab_username: JackieCharmander
