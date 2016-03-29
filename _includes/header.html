@@ -1,0 +1,34 @@
+<header class="site-header">
+	
+	<div class="navContainer">
+
+		<nav class="site-nav">
+			<a href="#" class="menu-icon">
+			
+			</a>
+
+			<div class="trigger">
+				{% assign sorted_pages = site.pages | sort:"order" %}
+				{% for node in sorted_pages %}
+					{% if node.title %}
+						<a class="page-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.stitle }}</a>
+					{% endif %}
+				{% endfor %}
+			</div>
+			
+		</nav>
+
+	</div>
+	
+	<div id="search-demo-container">
+		<input id="search-input" placeholder="search..." type="text">
+		<ul id="results-container"></ul>
+	</div>
+	
+	<div class="logoContainer">
+		<!--<a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>-->
+		<!-- <link rel="stylesheet" href="{{ "/css/orangeNPink.css" | prepend: site.baseurl }}"> -->
+		<img src="{{ "/images/JackieBlogLogo.png" | prepend: site.baseurl }}" alt="Blog's logo">
+	</div>
+
+</header>

@@ -1,0 +1,16 @@
+<div class="miniFashions">
+	<h1>Recent fashions:</h1>
+	<div class="mFashionContainer">
+		{% assign counter=0 %}
+		{% for post in site.posts %}
+			{% if post.title and post.categories contains "fashions" and counter < 3 %}
+			{% assign counter=counter | plus:1 %}
+				<div class ="mFashion">
+					<a class="mFashionLink" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					<p class="mFashionDesc"> Tags: {{ post.tags}}
+					<p class="mFashionExcerpt"> {{ post.imgExcerpt}}
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
