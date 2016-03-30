@@ -2,9 +2,14 @@
 	{% assign base = site.baseurl | prepend: site.url %}
 	{% assign lvl = page.baseurl | append:'X' | split:'/' | size %}
 	{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
-
 	<script src="{{ "/jekyll-search.min.js" | prepend: base }}"></script>
-	<script src="{{ "/script.js" | prepend: base }}"></script>
+	<script>
+		SimpleJekyllSearch.init({
+			searchInput: document.getElementById('search-input'),
+			resultsContainer: document.getElementById('results-container'),
+			json: '{{ base }}/search.json',
+		});
+	</script>
 	<div class="wrapper">
 
     <h2 class="footer-heading">{{ site.title }}</h2>
