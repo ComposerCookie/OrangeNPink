@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+	{% include head.html %}
 
-  <body>
+	<body>
 
-    {% include header.html %}
+		{% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+		<div class="page-content">
+			<img class="topBorderImg" src=" {{ "/images/borderTop.png" | prepend: site.baseurl }} " align="middle" >
+			{{ content }}
+		</div>
 
-    {% include footer.html %}
+		{% include footer.html %}
 
-  </body>
+	</body>
 
 </html>

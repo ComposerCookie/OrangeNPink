@@ -1,20 +1,25 @@
 ---
 layout: default
 ---
-<article class="post">
+<!DOCTYPE html>
 
-	<div class="left-column">
+<div class="blogPage">
+
+	<div class="leftColumn">
 		{% include blogArchives.html %}
 	</div>
-	
-	<div class="right-column">
+
+	<div class="rightColumn">
+		{% assign counter=0 %}
+		{% for post in site.posts %}
+			{% if post.title and post.categories contains "blogs" and counter < 5 %}
+			{% assign counter=counter | plus:1 %}
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				<p> Posted: <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time> by Jacqueline
+				<p> Tags: {{ post.categories}} 
+				<p> {{ post.excerpt}}
+			{% endif %}
+		{% endfor %}
 	</div>
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
+	
+</div>

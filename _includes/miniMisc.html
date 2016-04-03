@@ -7,7 +7,7 @@
 			{% assign counter=counter | plus:1 %}
 				<div class ="mMisc">
 					<a class="mMiscLink" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-					<p class="mMiscDesc"> Posted: {{ post.date}} by Jacqueline
+					<p class="mMiscDesc"> Posted: <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time> by Jacqueline
 					<p class="mMiscDesc"> Tags: {{ post.tags}}
 					<p class="mMiscExcerpt"> {{ post.excerpt}}
 				</div>

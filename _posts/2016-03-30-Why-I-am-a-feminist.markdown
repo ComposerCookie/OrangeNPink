@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Why I am a feminist"
+author: Jacqueline
 date:   2016-03-30 19:00:00 -0500
 categories: blogs feminism women personal
 ---
