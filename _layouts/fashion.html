@@ -1,14 +1,21 @@
 ---
 layout: default
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+<div class="fashionPage">
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+	{% include fashionSort.html %}
+	
+	<div class="fashLeftColumn">
+		{% include fashionOnlyShow.html %}
+	</div>
 
-</article>
+	<div class="fashRightColumn">
+		{% for post in site.posts %}
+			{% if post.title and post.categories contains "fashion" %}
+				<a href="{{ post.url | prepend: site.baseurl }}"><img src=" {{ "/images/" | prepend: site.baseurl | append: post.fashPicName }} " width="300" height="200"></a>
+			{% endif %}
+		{% endfor %}
+	</div>
+	
+</div>
