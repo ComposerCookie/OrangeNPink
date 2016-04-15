@@ -5,7 +5,7 @@ body{
 .logoContainer {
 	height: 420px;
 	width: 100%;
-	background-image: url("../images/headerBGMin.png");
+	background-image: url("../images/headerBgMin.png");
 	text-align: center;
 }
 
@@ -53,6 +53,7 @@ body{
 	width: 45%;
 	display: inline-block;
 	text-align: left;
+	vertical-align: top;
 }
 
 .mFashionContainer {
@@ -64,6 +65,7 @@ body{
 	width: 30%;
 	display: inline-block;
 	text-align: left;
+	vertical-align: top;
 }
 
 .mMiscContainer {
@@ -75,6 +77,111 @@ body{
 	width: 45%;
 	display: inline-block;
 	text-align: left;
+	vertical-align: top;
+}
+
+.blogArch{
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.blogArch li{
+	margin-left: 20px;
+}
+
+/* Rounded avatars */
+.circleAvatar {
+	display: inline-block;
+    margin-top: 1em;
+    margin-right: 1em;
+	margin-left: 6px;
+    position: relative;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+}
+
+.topBorderImg {
+	margin: 0 auto;
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 80px;
+}
+
+.postDesc {
+	display: inline-block;
+	font-size: 16px;
+    color: #828282;
+	margin-left: 10px;
+	padding-top: 20px;
+}
+
+.post-header {
+}
+
+.blogEmoji {
+	display: inline;
+}
+
+.blogLayout {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.blogLayout p {
+
+}
+
+.blogPage {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.leftColumn {
+	max-width: 30%;
+	display: inline-block;
+	text-align: left;
+	padding-right: 30px;
+	vertical-align: top;
+}
+
+.rightColumn {
+	width: 65%;
+	display: inline-block;
+	text-align: left;
+}
+
+.fashLeftColumn {
+	max-width: 20%;
+	display: inline-block;
+	text-align: left;
+	padding-right: 30px;
+	vertical-align: top;
+}
+
+.fashRightColumn {
+	width: 75%;
+	display: inline-block;
+}
+
+.fashionPage {
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.fashionPage img {
+	display: inline-block;
+	margin-bottom: 4px;
 }
 
 .page-link {
@@ -88,6 +195,7 @@ body{
 	margin: 0 auto;
 	width: 70%;
 	background-color: #FFFFFF;
+	
 }
 
 .site-footer {
@@ -102,5 +210,10 @@ body{
 	.home-contet {
 		width: 95%;
 	}
+}
 
+@media (max-width: 1024px) {
+	.blogLayout {
+		width: 75%;
+	}
 }
