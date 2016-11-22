@@ -14,12 +14,12 @@ body{
 }
 
 .navContainer {
-	
+
 }
 
 .site-nav {
 	margin: 0 auto;
-	background-color: #79F7FF;
+	background-color: #383838;
 	width: 100%;
 	text-align: center;
 }
@@ -39,7 +39,7 @@ body{
 }
 
 .home-content {
-	
+
 	margin: 0 auto;
 	width: 80%;
 }
@@ -195,11 +195,11 @@ body{
 	margin: 0 auto;
 	width: 70%;
 	background-color: #FFFFFF;
-	
+
 }
 
 .site-footer {
-	background-color: #79F7FF;
+	background-color: #383838;
 	width: 100%;
 }
 
