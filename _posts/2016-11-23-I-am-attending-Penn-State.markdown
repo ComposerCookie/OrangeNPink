@@ -4,11 +4,13 @@ title:  I'm attending Penn State
 author: Jacqueline
 date:   2016-11-23 19:00:00 -0500
 categories: blogs personal technology college programming
+excerpt_separator: <!--more-->
 ---
 
 I have recently been admitted to Penn State for Computer Science major, and needless to say, I’m taking the offer.
 
 For those of you that do know me, this might have come as a shock, since I have been so vehemently opposed to going to college back when I was in high school. Surely you remember my speech in Mrs. Palmer class about how if you truly want to learn, you can just read, research, do it yourself, and then take a test (in this case, AP tests) to prove your knowledge instead of wasting your life in honor classes. To me, I felt like college was a waste of time, was a waste of money, that I would rather spend my times self teaching myself rather than wasting 2 years of my life learning gen ed. I hated the idea of college, I hated the thought of being evaluated by my grade instead of my skill, my portfolio, and my passion.
+<!--more-->
 
 Admittedly, even now, I still hold a little bit of resentment toward college. I still hate general ed, but otherwise, I’m actually looking forward to attending Penn State — with a positive outlook. For the most part, my negative opinions of college have became either neutral or positive as I experience life; I can understand why a college degree is actually a pretty good investment, especially if you are in an economically beneficial field. After all, I did took about half a year off after high school, working on personal projects/app, and applying to local programming jobs in my area, without much success.
 
